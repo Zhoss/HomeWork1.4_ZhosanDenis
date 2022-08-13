@@ -57,15 +57,23 @@ public class Main {
     }
 
     private static void task5() {
-        for (int a = 0, b = 1; a < 50; a = a + b, b = a + b) {
-            System.out.print(a + " " + b + " ");
+//      for (int a = 0, b = 1; a < 50; a = a + b, b = a + b) {
+//          System.out.print(a + " " + b + " ");
+//        }
+        int a = 0;
+        int b = 1;
+        for (int i = 0; i < 10; i++) {
+            System.out.print(a + " ");
+            int n = a + b;
+            a = b;
+            b = n;
         }
         System.out.println();
     }
+
     private static void task8() {
         int a = 379;
         int b = (a % 100) / 10;
         System.out.println("Если a равно " + a + ", то b равно " + b);
     }
-
 }
